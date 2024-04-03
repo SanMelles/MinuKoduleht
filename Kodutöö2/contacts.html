@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Maps API script with placeholder API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <style>
+        body {
+            background-color: #222529; /* Background color */
+            min-height: 100vh; /* Minimum height to cover the whole viewport */
+            position: relative; /* Relative positioning for the footer to be positioned absolutely */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .m-left {
+            padding-left: 10px;
+        }
+
+        .header {
+            font-size: 250%;
+            text-align: center;
+            padding: 40px;
+            font-weight: 600;
+        }
+
+        .slides {
+            margin-top: 0px;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+        }
+
+        .intro-text {
+            width: 900px;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+        .footer {
+            position: absolute; /* Absolute positioning */
+            bottom: 0; /* Stick to the bottom */
+            width: 100%; /* Full width */
+            color: #ffffff; /* Text color */
+            padding: 20px; /* Padding */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-dark">
+        <nav style="background-color: #000000;" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Gaming Goons</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logIn.html">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="my-5">
+            <div>
+
+            </div>
+        </div>
+        <div class="container text-light intro-text">
+            <header>
+                <h1>Contact Us</h1>
+            </header>
+
+            <section id="contact-info">
+                <h2>Contact Information</h2>
+                <p>Email: GamingGoons@gmail.com</p>
+                <p>Phone: +3721234567</p>
+                <p>Address: Erika 14, Tallinn, Estonia</p>
+            </section>
+
+            <section id="map">
+                <!-- Google Maps will be embedded here -->
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!-- Footer content -->
+        <div class="text-center">
+            © 2024 Gaming Goons. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of your business
+            var location = { lat: 40.7128, lng: -74.0060 };
+            // The map, centered at your business location
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location,
+            });
+            // The marker, positioned at your business location
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+</body>
+
+</html>

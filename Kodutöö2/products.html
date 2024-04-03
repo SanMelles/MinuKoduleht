@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Maps API script with placeholder API key -->
+    <style>
+        body {
+            background-color: #222529;
+            /* Background color */
+            min-height: 100vh;
+            /* Minimum height to cover the whole viewport */
+            position: relative;
+            /* Relative positioning for the footer to be positioned absolutely */
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+        }
+
+        .m-left {
+            padding-left: 10px;
+        }
+
+        .header {
+            font-size: 250%;
+            text-align: center;
+            padding: 40px;
+            font-weight: 600;
+        }
+
+        .slides {
+            margin-top: 0px;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+        }
+
+        .intro-text {
+            width: 900px;
+        }
+
+        .footer {
+            position: absolute;
+            /* Absolute positioning */
+            bottom: 0;
+            /* Stick to the bottom */
+            width: 100%;
+            /* Full width */
+            color: #ffffff;
+            /* Text color */
+            padding: 20px;
+            /* Padding */
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            /* Ensure the hero image fits within the container */
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-content {
+            padding: 20px;
+        }
+
+        .product h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            margin-bottom: 0;
+        }
+
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+            /* Set a specific height */
+            height: 50%;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Place text in the middle of the image */
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .hero-text-light {
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-dark">
+        <nav style="background-color: #000000;" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Gaming Goons</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logIn.html">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="hero-image"><img style="width: 100%;" src="images/msi-arvuti product pic.webp" alt="...">
+            <div class="hero-text">
+                <h1>MSI GL63 Gaming Laptop 15.6"</h1>
+                <p> Intel Core i7-8750H, NVIDIA GeForce GTX 1050, 8gb RAM, 256gb SSD + 1TB HDD</p>
+                <p>849.99€</p>
+                <button>Buy now</button>
+            </div>
+        </div>
+        <div class="hero-image"><img style="width: 100%;" src="images/arvuti product.jpg" alt="...">
+            <div class="hero-text">
+                <h1>Thermaltake Rapture Xtreme V4 Gaming PC i9-13900 32GB 1TB+4TB RTX4080 W11H</h1>
+                <p>i9-13900 32GB 1TB+4TB RTX4080 W11H</p>
+                <p>6000€</p>
+                <button>Buy now</button>
+            </div>
+        </div>
+        <div class="hero-image"><img style="width: 100%;" src="images/ps5 product.jpg" alt="...">
+            <div class="hero-text-light">
+                <h1>Playstation 5</h1>
+                <p>Standard Edition</p>
+                <p>599€</p>
+                <button>Buy now</button>
+            </div>
+        </div>
+        <footer class="bg-body-tertiary text-center text-light">
+            <!-- Copyright -->
+            <div class="text-center p-3 bg-dark text-light">
+                © 2024 Gaming Goons. All rights reserved.
+                <a class="text-light" href="index.html">Gaming Goons</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+</body>
+
+</html>

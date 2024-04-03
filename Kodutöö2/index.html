@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<style>
+    .m-left {
+        padding-left: 10px;
+    }
+
+    .header {
+        font-size: 250%;
+        text-align: center;
+        padding: 40px;
+        font-weight: 600;
+    }
+
+    .intro-text {
+        width: 900px;
+    }
+
+    .text-separator {
+        padding-top: 30px;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .footer {
+        position: absolute;
+        /* Absolute positioning */
+        bottom: 0;
+        /* Stick to the bottom */
+        width: 100%;
+        /* Full width */
+        color: #ffffff;
+        /* Text color */
+        padding: 20px;
+        /* Padding */
+    }
+</style>
+
+<body>
+    <div class="bg-dark">
+        <nav style="background-color: #000000;" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Gaming Goons</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logIn.html">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="slides">
+            <div id="carouselExampleIndicators" class="carousel slide" style="height: 90vh;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" style="height: 90vh;">
+                    <div class="carousel-item active" style="height: 90vh;">
+                        <a href="blog.html"> <img src="images/Blog pic õige suurus.jpg" class="d-block w-100"
+                                alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Our blog</h5>
+                            <p>Our blog posts for this homepage</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 90vh;">
+                        <a href="products.html"> <img src="images/Products pic õige suurus.jpg" class="d-block w-100"
+                                alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Products</h5>
+                            <p>Shop online</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 90vh;">
+                        <a href="contacts.html"> <img src="images/gaming-pic-2.jpg" class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Contact</h5>
+                            <p>Get in touch with us</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 90vh;">
+                        <a href="logIn.html"> <img src="images/LogIN pic õige suurus.jpg" class="d-block w-100"
+                                alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Log in</h5>
+                            <p>Create an account and log in</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="text-separator">
+            <div class="text-light container-fluid intro-text">
+                <h2>Our story</h2>
+                <p>Welcome to Gaming Goons!
+
+                    At Gaming Goons, we are dedicated to providing gamers with the tools they need to elevate their
+                    gameplay to the next level. From high-performance peripherals to cutting-edge accessories, we offer
+                    a wide range of top-quality gaming equipment designed to enhance your gaming experience.
+
+                    Our mission is simple: to empower gamers with the latest technology and innovative gear that not
+                    only meets but exceeds their expectations. Whether you're a casual player or a competitive esports
+                    athlete, we have the perfect gear to suit your style and preferences.
+
+                    From precision gaming mice and responsive mechanical keyboards to immersive headsets and ergonomic
+                    gaming chairs, our products are engineered with precision and crafted with care. We understand that
+                    every gamer is unique, and that's why we offer a diverse selection of products to cater to a variety
+                    of needs and preferences.
+
+                    But Gaming Goons is more than just a provider of gaming equipment. We're a community of gamers who
+                    are passionate about gaming culture and dedicated to helping each other succeed. Whether you're
+                    looking for advice on building the ultimate gaming setup or seeking tips to improve your gameplay,
+                    you'll find a supportive and welcoming community here at Gaming Goons.
+
+                    Join us as we embark on a journey to revolutionize the way gamers play and experience their favorite
+                    games. With Gaming Goons by your side, the possibilities are endless.
+
+                    Welcome to the future of gaming. Welcome to Gaming Goons!
+
+                </p>
+            </div>
+        </div>
+        <footer class="bg-body-tertiary text-center text-light">
+            <!-- Copyright -->
+            <div class="text-center p-3 bg-dark text-light">
+                © 2024 Gaming Goons. All rights reserved.
+                <a class="text-light" href="index.html">Gaming Goons</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+</body>
+
+</html>
